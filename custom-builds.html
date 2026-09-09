@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Custom Club Builds — PWR Golf Co.</title>
+<meta name="description" content="Spec a custom golf club build: head, shaft, grip, length, loft, lie, swing weight, ferrule.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pwr.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="wrap"><span>St. Augustine, FL · Open today — see hours</span><span class="r"><span>Free local pickup</span><span>Trade-ins accepted daily</span><span>Fitting fee credited toward clubs</span></span></div></div>
+<header class="site">
+  <div class="wrap">
+    <button class="burger util" aria-label="Menu" type="button" style="padding:0"><span data-ico="menu" style="width:26px;height:26px;display:inline-block"></span></button>
+    <a class="logo" href="index.html" aria-label="PWR Golf Co. home"><img src="assets/img/logo-white.png" alt="PWR Golf — Buy · Sell · Trade · Fit"></a>
+    <nav class="main" aria-label="Main"><a href="shop.html" class="">Shop</a><a href="used-clubs.html" class="">Used Clubs</a><a href="trade-in.html" class="">Trade-In</a><a href="fitting.html" class="">Fittings</a><a href="repair.html" class="">Repair</a><a href="simulator.html" class="">Simulator</a><a href="pwr-finds.html" class="finds">PWR Finds</a><a href="about.html" class="">About</a></nav>
+    <div class="util">
+      <button type="button" data-search-toggle aria-label="Search"><span data-ico="search" style="display:inline-flex"></span><span class="lbl">Search</span></button>
+      <a href="account.html"><span data-ico="user" style="display:inline-flex"></span><span class="lbl">Account</span></a>
+      <a href="cart.html"><span data-ico="cart" style="display:inline-flex"></span><span class="lbl">Cart</span><span class="cartcount">0</span></a>
+    </div>
+  </div>
+  <div class="searchbar"><div class="wrap"><form action="shop.html" method="get" role="search"><input type="search" name="q" placeholder="Search clubs, shafts, SKUs… try “Ventus” or “P790”" aria-label="Search"><button class="btn">Search</button></form></div></div>
+  <nav class="mobile" aria-label="Mobile"><a href="shop.html">Shop</a><a href="used-clubs.html">Used Clubs</a><a href="trade-in.html">Trade-In</a><a href="fitting.html">Fittings</a><a href="repair.html">Repair</a><a href="simulator.html">Simulator</a><a href="pwr-finds.html">PWR Finds</a><a href="about.html">About</a><a href="account.html">Account</a><a href="book.html">Book</a><a href="store.html">Store &amp; hours</a></nav>
+</header>
+<main id="main">
+<section class="pagehero "><div class="wrap"><div class="kicker">Built at the bench, to your spec</div><h1>Custom Club Builds</h1><p class="lead">Pick a head, shaft, grip and specs. We build it, swing-weight it, and hand it to you with a spec card. Bring your own parts or buy them here.</p><div class="flex" style="margin-top:14px"><a class="btn white" href="#configure">Spec a build</a><a class="btn ghost" href="fitting.html">Not sure what you need? Get fit first</a></div></div><span class="jag" data-jag></span></section>
+<section class="section" id="configure"><div class="wrap" id="buildwrap">
+  <div class="cfg">
+    <form id="buildform" class="form">
+      <div class="kicker">Configure</div><h3>Your build</h3>
+      <div class="grid g2 stack">
+        <div class="field"><label>Head</label><select name="head"><option>Bring your own head</option><option>Titleist GT3 head</option><option>TaylorMade Qi35 head</option><option>Callaway Elyte TD head</option><option>Ping G440 LST head</option><option>Titleist T150 heads (4-PW)</option><option>TaylorMade P790 heads (4-PW)</option><option>Mizuno Pro 245 heads (4-PW)</option><option>Vokey SM10 head</option></select></div>
+        <div class="field"><label>Loft</label><select name="loft"><option>Stock loft</option><option>−1°</option><option>−0.5°</option><option>+0.5°</option><option>+1°</option><option>Tell us in notes</option></select></div>
+        <div class="field"><label>Shaft</label><select name="shaft"><option>Bring your own shaft</option><option>Fujikura Ventus Blue</option><option>Fujikura Ventus Black</option><option>Graphite Design Tour AD DI</option><option>Mitsubishi Tensei 1K Pro</option><option>Project X HZRDUS Black</option><option>KBS Tour (set)</option><option>True Temper Dynamic Gold (set)</option><option>Nippon Modus3 105 (set)</option></select></div>
+        <div class="field"><label>Flex</label><select name="flex"><option>Regular</option><option selected>Stiff</option><option>X-Stiff</option><option>Senior</option><option>Ladies</option></select></div>
+        <div class="field"><label>Grip</label><select name="grip"><option>Golf Pride Tour Velvet</option><option>Golf Pride MCC Plus4</option><option>Golf Pride CP2 Pro</option><option>Lamkin Crossline</option><option>SuperStroke S-Tech</option><option>Bring your own grip</option></select></div>
+        <div class="field"><label>Extra wraps under grip</label><select name="wraps"><option>0</option><option>1</option><option>2</option><option>3</option><option>Midsize grip instead</option></select></div>
+        <div class="field"><label>Length</label><select name="length"><option>Standard</option><option>−1"</option><option>−0.75"</option><option>−0.5"</option><option>−0.25"</option><option>+0.25"</option><option>+0.5"</option><option>+0.75"</option><option>+1"</option></select></div>
+        <div class="field"><label>Lie</label><select name="lie"><option>Standard</option><option>1° flat</option><option>2° flat</option><option>1° upright</option><option>2° upright</option><option>3° upright</option></select></div>
+        <div class="field"><label>Swing weight request</label><select name="sw"><option value="">Whatever it lands at</option><option>C9</option><option>D0</option><option>D1</option><option>D2</option><option>D3</option><option>D4</option><option>D5</option></select></div>
+        <div class="field"><label>Ferrule</label><select name="ferrule"><option>Standard black</option><option>Black w/ silver ring</option><option>Custom color (tell us)</option><option>Clear / no ferrule</option></select></div>
+      </div>
+      <div class="field"><label>Build notes</label><textarea name="notes" placeholder="Tip 0.5\", match to my current 7 iron at D2, want the ferrules to match my bag (navy)…"></textarea></div>
+      <div class="grid g2 stack"><div class="field"><label>Name</label><input name="name" required></div><div class="field"><label>Cell</label><input name="phone" type="tel" required></div></div>
+      <button class="btn block lg">Send build request</button>
+      <p class="small muted" style="margin-top:10px">We confirm price and parts before anything gets epoxied. Fitting fee waived with any build.</p>
+    </form>
+    <aside class="buildsum">
+      <div class="kicker" style="color:#b8b6ae">Build summary</div>
+      <div class="row"><span>Head</span><span id="bs-head"></span></div>
+      <div class="row"><span>Shaft</span><span id="bs-shaft"></span></div>
+      <div class="row"><span>Grip</span><span id="bs-grip"></span></div>
+      <div class="row"><span>Specs</span><span id="bs-specs"></span></div>
+      <div class="row"><span>Ferrule</span><span id="bs-ferrule"></span></div>
+      <div class="row"><span>Bench labor</span><span id="bs-labor"></span></div>
+      <div class="total" id="bs-total"></div>
+      <p class="small" style="color:#b8b6ae">Estimate. Parts at our shelf price; your own parts = labor only.</p>
+    </aside>
+  </div>
+</div></section>
+<section class="section black"><div class="wrap">
+  <div class="sectionhead"><div><div class="kicker">Featured builds</div><h2>Off the bench lately</h2></div><a class="more" href="reviews.html#builds">Customer builds →</a></div>
+  <div class="grid g3 stack">
+    <div class="svc"><span class="tag ply">Build 0147</span><h3>GT3 · Tour AD DI-6X · 44.5"</h3><p class="small">Shortened driver for a 4-handicap who kept hitting the hosel. Swing weight held at D3 with a 6g tip weight. Dispersion halved.</p></div>
+    <div class="svc"><span class="tag ply">Build 0142</span><h3>P790 4-PW · Modus 105S · +0.5", 2° up</h3><p class="small">Tall player, bought heads used (SKU on the floor), shafts new. Custom navy ferrules to match the bag. Saved ~$600 vs. new.</p></div>
+    <div class="svc"><span class="tag ply">Build 0138</span><h3>SM10 50/54/58 · DG S200 · lofts bent 1° strong</h3><p class="small">Gapping fix after an iron fitting. Bent, checked, regripped with CP2 midsize. Done in an afternoon.</p></div>
+  </div>
+</div></section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <img src="assets/img/logo-white.png" alt="PWR Golf" style="height:56px;width:auto;margin-bottom:16px">
+        <p class="small" style="max-width:36ch;color:#b8b6ae">Golf clubs. Fittings. Repairs. Simulators. No nonsense. Family-owned in St. Augustine, Florida.</p>
+        <p class="small"><a href="store.html">1140 Industry Loop, Unit C<br>St. Augustine, FL 32084</a><br><a href="tel:+19045550147">(904) 555-0147</a><br><a href="mailto:shop@pwrgolf.co">shop@pwrgolf.co</a></p>
+        <form data-signup class="flex" style="gap:6px;margin-top:14px;max-width:360px"><input type="email" required placeholder="Email for first dibs" style="background:#1a1c1f;border-color:#3a3e44;color:#fff"><button class="btn ply sm">Go</button></form>
+        <p class="small" style="color:#8d8b84;margin-top:6px">Get first dibs on new trade-ins and PWR Finds. No spam, ever.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="shop.html?type=new">New clubs</a></li><li><a href="used-clubs.html">Pre-owned clubs</a></li><li><a href="pwr-finds.html">PWR Finds</a></li><li><a href="new-arrivals.html">Just hit the floor</a></li><li><a href="shop.html?clearance=1">Clearance</a></li><li><a href="brands.html">Brands</a></li><li><a href="shop.html?cat=shaft">Shafts</a></li><li><a href="shop.html?cat=grip">Grips</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="trade-in.html">Trade-in / sell your clubs</a></li><li><a href="fitting.html">Club fitting</a></li><li><a href="repair.html">Repair &amp; workshop</a></li><li><a href="custom-builds.html">Custom builds</a></li><li><a href="simulator.html">Simulator</a></li><li><a href="book.html">Book anything</a></li><li><a href="rewards.html">PWR Rewards</a></li></ul></div>
+      <div><h4>PWR</h4><ul><li><a href="about.html">About</a></li><li><a href="team.html">Meet the team</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="guides.html">Gear guides</a></li><li><a href="store.html">Store &amp; hours</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li><li><a href="admin/inventory.html" style="color:#6b6b66">Staff: inventory</a></li></ul></div>
+      <div><h4>Hours</h4><table class="hours"><tr data-day="1"><td>Mon</td><td>10–6</td></tr><tr data-day="2"><td>Tue</td><td>10–6</td></tr><tr data-day="3"><td>Wed</td><td>10–6</td></tr><tr data-day="4"><td>Thu</td><td>10–7</td></tr><tr data-day="5"><td>Fri</td><td>10–7</td></tr><tr data-day="6"><td>Sat</td><td>9–5</td></tr><tr data-day="0"><td>Sun</td><td>Closed</td></tr></table><p class="small" style="margin-top:10px;color:#8d8b84">Holiday hours posted on the <a href="store.html">store page</a>.</p></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 PWR Golf Co. · <a href="shipping-policy.html">Shipping</a> · <a href="returns.html">Returns</a> · <a href="condition-guide.html">Condition guide</a> · <a href="warranty.html">Warranty</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="accessibility.html">Accessibility</a></div>
+      <div class="payicons"><span>Visa</span><span>MC</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span><span>Shop Pay</span><span data-ico="lock" style="display:inline-flex;width:14px;border:0;padding:0"></span><span style="border:0">Secure checkout</span></div>
+    </div>
+  </div>
+</footer>
+<script src="data/inventory.js"></script>
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

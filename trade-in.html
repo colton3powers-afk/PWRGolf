@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trade-In / Sell Your Clubs — PWR Golf Co.</title>
+<meta name="description" content="Get a trade-in estimate for your golf clubs. Cash or store credit (20% more). We buy single clubs, full bags and collections in St. Augustine.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pwr.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="wrap"><span>St. Augustine, FL · Open today — see hours</span><span class="r"><span>Free local pickup</span><span>Trade-ins accepted daily</span><span>Fitting fee credited toward clubs</span></span></div></div>
+<header class="site">
+  <div class="wrap">
+    <button class="burger util" aria-label="Menu" type="button" style="padding:0"><span data-ico="menu" style="width:26px;height:26px;display:inline-block"></span></button>
+    <a class="logo" href="index.html" aria-label="PWR Golf Co. home"><img src="assets/img/logo-white.png" alt="PWR Golf — Buy · Sell · Trade · Fit"></a>
+    <nav class="main" aria-label="Main"><a href="shop.html" class="">Shop</a><a href="used-clubs.html" class="">Used Clubs</a><a href="trade-in.html" class="">Trade-In</a><a href="fitting.html" class="">Fittings</a><a href="repair.html" class="">Repair</a><a href="simulator.html" class="">Simulator</a><a href="pwr-finds.html" class="finds">PWR Finds</a><a href="about.html" class="">About</a></nav>
+    <div class="util">
+      <button type="button" data-search-toggle aria-label="Search"><span data-ico="search" style="display:inline-flex"></span><span class="lbl">Search</span></button>
+      <a href="account.html"><span data-ico="user" style="display:inline-flex"></span><span class="lbl">Account</span></a>
+      <a href="cart.html"><span data-ico="cart" style="display:inline-flex"></span><span class="lbl">Cart</span><span class="cartcount">0</span></a>
+    </div>
+  </div>
+  <div class="searchbar"><div class="wrap"><form action="shop.html" method="get" role="search"><input type="search" name="q" placeholder="Search clubs, shafts, SKUs… try “Ventus” or “P790”" aria-label="Search"><button class="btn">Search</button></form></div></div>
+  <nav class="mobile" aria-label="Mobile"><a href="shop.html">Shop</a><a href="used-clubs.html">Used Clubs</a><a href="trade-in.html">Trade-In</a><a href="fitting.html">Fittings</a><a href="repair.html">Repair</a><a href="simulator.html">Simulator</a><a href="pwr-finds.html">PWR Finds</a><a href="about.html">About</a><a href="account.html">Account</a><a href="book.html">Book</a><a href="store.html">Store &amp; hours</a></nav>
+</header>
+<main id="main">
+<section class="pagehero photobg"><div class="wrap"><div class="kicker">Trade-in · cash or credit</div><h1>Sell Your Clubs</h1><p class="lead">Get a number in 30 seconds. Bring it in, we check it over, you leave with cash or store credit. Credit pays 20% more and works on anything in the building.</p><div class="flex" style="margin-top:14px"><a class="btn white" href="#estimate">Get an estimate</a><a class="btn ghost" href="#grading">How grading works</a></div></div><span class="jag" data-jag></span></section>
+<section class="section" id="estimate"><div class="wrap">
+  <div class="shop-layout" style="grid-template-columns:1fr 1fr;gap:40px">
+    <div class="form">
+      <div class="kicker">Step 1</div><h3>What are you trading?</h3>
+      <div class="field"><label>Brand</label><select id="t-brand"></select></div>
+      <div class="field"><label>Model</label><select id="t-model" disabled><option value="">Pick a brand first</option></select></div>
+      <div class="field"><label>Condition (be honest — we'll check)</label><select id="t-cond"><option value="">Pick one</option><option value="9.5">9.5 — Mint, barely hit</option><option value="9">9 — Excellent, light use</option><option value="8">8 — Very good, normal wear</option><option value="7">7 — Good, visible wear, plays fine</option><option value="6">6 — Fair, cosmetic issues</option></select></div>
+      <div class="est" id="t-out" style="display:none">
+        <div><div class="v"><small>Cash</small><span id="t-cash"></span></div></div>
+        <div class="credit"><div class="v"><small>Store credit (+20%)</small><span id="t-credit"></span></div></div>
+        <p class="small" style="grid-column:1/-1;margin:0;color:#b8b6ae" id="t-what"></p>
+      </div>
+      <p class="small muted" style="margin-top:12px">Estimates assume stock shaft and standard length. Aftermarket shafts, LH, and rare specs usually add value — tell us in step 2.</p>
+    </div>
+    <form class="form" id="tradeform">
+      <div class="kicker">Step 2</div><h3>Lock in a quote</h3>
+      <div class="grid g2 stack"><div class="field"><label>Name</label><input name="name" required></div><div class="field"><label>Cell</label><input name="phone" type="tel" required></div></div>
+      <div class="field"><label>Email</label><input name="email" type="email"></div>
+      <div class="field"><label>Details (shaft, flex, length, anything altered, what's included)</label><textarea name="details" placeholder="e.g. Ventus Blue 6S, standard length, headcover included, one small sky mark"></textarea></div>
+      <div class="field"><label>I want to</label><select name="intent"><option>Take store credit toward another club</option><option>Take cash</option><option>Trade toward a specific club (tell us the SKU in details)</option><option>Sell a full bag / collection</option></select></div>
+      <div class="field"><label>How will you get it to us?</label><select name="method"><option>Bring it into the store</option><option>Mail-in (coming soon — we'll send a label)</option></select></div>
+      <button class="btn block">Request quote</button>
+      <p class="small muted" style="margin-top:10px">No obligation. Quotes are good for 14 days.</p>
+    </form>
+  </div>
+</div></section>
+<section class="section black" id="grading"><div class="wrap">
+  <div class="kicker">How grading works</div><h2>Same scale we sell on. Same scale we buy on.</h2>
+  <div class="grid g2 stack" style="margin-top:28px">
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:var(--ply)">9.5<small>Mint</small></div><div>Hit a handful of times at most. No marks worth mentioning. Original grip like new.</div></div>
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:var(--ply)">9<small>Excellent</small></div><div>Light use. Faint bag chatter only under close inspection. Grooves sharp.</div></div>
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:var(--ply)">8<small>Very good</small></div><div>Normal play wear. Sole scuffs, maybe a faint crown mark. No dents, no rattles.</div></div>
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:var(--ply)">7<small>Good</small></div><div>Honest wear. Visible sole and face scratches, a sky mark or two. Plays perfectly.</div></div>
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:var(--ply)">6<small>Fair</small></div><div>Well-used. Cosmetic issues we photograph and describe. Priced accordingly.</div></div>
+    <div class="grade" style="background:var(--steel-2);border-color:var(--line-dark)"><div class="g" style="color:#b3261e">✕<small>No thanks</small></div><div>Cracked faces, rattles, bent hosels, counterfeits, clubs with sentimental value priced accordingly.</div></div>
+  </div>
+  <p class="lead" style="margin-top:28px">Value is set by model, year, condition, shaft and what the market is actually paying — not by a chart from 2019. Aftermarket shafts and left-handed clubs usually get a bump. We'll show you the number and how we got there.</p>
+</div></section>
+<section class="section"><div class="wrap feature">
+  <div class="photo used"><span class="cap sign sm">Used clubs</span></div>
+  <div><div class="kicker">Full bags &amp; collections</div><h2>We buy the whole bag.</h2><p class="lead">Quitting, upgrading, cleaning out a garage, settling an estate — bring everything. We'll price the lot on the spot and we don't cherry-pick and hand the rest back.</p><a class="btn" href="contact.html?re=Trade-in question">Talk to us about a collection</a></div>
+</div></section>
+<section class="section concrete"><div class="wrap"><div class="kicker">Trade-in FAQ</div><h2>Questions people actually ask</h2>
+  <div class="faq" style="margin-top:22px">
+    <details><summary>Do I need an appointment?</summary><div class="a">No. Walk in with the clubs. Takes about 10 minutes for a single club, 20–30 for a full bag.</div></details>
+    <details><summary>Cash or credit — how does that work?</summary><div class="a">You choose at the counter. Cash is cash. Store credit is 20% higher and never expires. It works on new, used, repairs, fittings, sim time — anything.</div></details>
+    <details><summary>Can I trade toward a specific used club?</summary><div class="a">Yes. Save the club online, mention the SKU in your quote, and we'll hold it for 48 hours once your quote is confirmed.</div></details>
+    <details><summary>Do you take old / cheap / off-brand clubs?</summary><div class="a">Mostly no for individual off-brand clubs, but we'll take them as part of a full bag and price the bag fairly.</div></details>
+    <details><summary>Mail-in?</summary><div class="a">Coming. For now, if you're outside Northeast Florida, email photos and we'll quote — then we send a prepaid label for clubs over $150 in value.</div></details>
+    <details><summary>What about clubs with aftermarket shafts?</summary><div class="a">Bring them. Ventus, Tour AD, Tensei, Modus, KBS — real aftermarket shafts add real value and we price them separately.</div></details>
+  </div>
+</div></section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <img src="assets/img/logo-white.png" alt="PWR Golf" style="height:56px;width:auto;margin-bottom:16px">
+        <p class="small" style="max-width:36ch;color:#b8b6ae">Golf clubs. Fittings. Repairs. Simulators. No nonsense. Family-owned in St. Augustine, Florida.</p>
+        <p class="small"><a href="store.html">1140 Industry Loop, Unit C<br>St. Augustine, FL 32084</a><br><a href="tel:+19045550147">(904) 555-0147</a><br><a href="mailto:shop@pwrgolf.co">shop@pwrgolf.co</a></p>
+        <form data-signup class="flex" style="gap:6px;margin-top:14px;max-width:360px"><input type="email" required placeholder="Email for first dibs" style="background:#1a1c1f;border-color:#3a3e44;color:#fff"><button class="btn ply sm">Go</button></form>
+        <p class="small" style="color:#8d8b84;margin-top:6px">Get first dibs on new trade-ins and PWR Finds. No spam, ever.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="shop.html?type=new">New clubs</a></li><li><a href="used-clubs.html">Pre-owned clubs</a></li><li><a href="pwr-finds.html">PWR Finds</a></li><li><a href="new-arrivals.html">Just hit the floor</a></li><li><a href="shop.html?clearance=1">Clearance</a></li><li><a href="brands.html">Brands</a></li><li><a href="shop.html?cat=shaft">Shafts</a></li><li><a href="shop.html?cat=grip">Grips</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="trade-in.html">Trade-in / sell your clubs</a></li><li><a href="fitting.html">Club fitting</a></li><li><a href="repair.html">Repair &amp; workshop</a></li><li><a href="custom-builds.html">Custom builds</a></li><li><a href="simulator.html">Simulator</a></li><li><a href="book.html">Book anything</a></li><li><a href="rewards.html">PWR Rewards</a></li></ul></div>
+      <div><h4>PWR</h4><ul><li><a href="about.html">About</a></li><li><a href="team.html">Meet the team</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="guides.html">Gear guides</a></li><li><a href="store.html">Store &amp; hours</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li><li><a href="admin/inventory.html" style="color:#6b6b66">Staff: inventory</a></li></ul></div>
+      <div><h4>Hours</h4><table class="hours"><tr data-day="1"><td>Mon</td><td>10–6</td></tr><tr data-day="2"><td>Tue</td><td>10–6</td></tr><tr data-day="3"><td>Wed</td><td>10–6</td></tr><tr data-day="4"><td>Thu</td><td>10–7</td></tr><tr data-day="5"><td>Fri</td><td>10–7</td></tr><tr data-day="6"><td>Sat</td><td>9–5</td></tr><tr data-day="0"><td>Sun</td><td>Closed</td></tr></table><p class="small" style="margin-top:10px;color:#8d8b84">Holiday hours posted on the <a href="store.html">store page</a>.</p></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 PWR Golf Co. · <a href="shipping-policy.html">Shipping</a> · <a href="returns.html">Returns</a> · <a href="condition-guide.html">Condition guide</a> · <a href="warranty.html">Warranty</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="accessibility.html">Accessibility</a></div>
+      <div class="payicons"><span>Visa</span><span>MC</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span><span>Shop Pay</span><span data-ico="lock" style="display:inline-flex;width:14px;border:0;padding:0"></span><span style="border:0">Secure checkout</span></div>
+    </div>
+  </div>
+</footer>
+<script src="data/inventory.js"></script>
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
