@@ -266,7 +266,6 @@
   /* ---------- booking ---------- */
   const SVC = {
     "Driver fitting":{price:100,dur:60},"Iron fitting":{price:100,dur:60},"Wedge fitting":{price:75,dur:45},"Putter fitting":{price:75,dur:45},"Full bag fitting":{price:250,dur:150},
-    "Simulator — 1 hour":{price:40,dur:60},"Simulator — 2 hours":{price:70,dur:120},"Simulator — practice 30 min":{price:20,dur:30},"Club testing session":{price:30,dur:45},
     "Repair consultation":{price:0,dur:20},"Lesson (45 min)":{price:85,dur:45}
   };
   function initBooking(){
